@@ -11,23 +11,3 @@
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 10fr;
 }
-
-
-.header {
-    grid-area: _h;
-    background-color: aqua;
-}
-
-.header img {
-    width: 40px;
-}
-
-.nav {
-    grid-area: _n;
-    background-color: blueviolet;
-}
-
-.content{
-    grid-area: _c;
-    background-color: chartreuse;
-}

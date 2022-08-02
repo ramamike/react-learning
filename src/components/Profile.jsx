@@ -1,15 +1,16 @@
 import React from 'react';
+import classes from './Profile.module.css';
 
 const Profile = () => {
     return (
-        <div>
-          <div className='content'>
+        <div className={classes.content}>
+          <div >
             <img src='https://www.nasa.gov/sites/default/files/thumbnails/image/web_first_images_release.png' alt=''/>
           </div>
-          <div>
+          <div className={classes.item}>
             ava + descr
           </div>
-          <div>
+          <div className={classes.item}>
             My post
             <div>
               New post 
