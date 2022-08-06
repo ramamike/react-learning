@@ -3,11 +3,16 @@
 
     width: 1200px;
 
-    grid-template-areas: 
-    "_h _h"
-    "_n _c"
+    grid-template-areas:
+        "_h _h"
+        "_n _c"
     ;
 
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 10fr;
+}
+
+.app-wrapper-content {
+    grid-area: _c;
+    background-color: blue;
 }
