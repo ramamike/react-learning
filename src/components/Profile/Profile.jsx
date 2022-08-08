@@ -1,20 +1,13 @@
 import React from 'react';
 // import classes from './Profile.module.css';
-import background from './background.png';
-import MyPosts from './MyPosts/MyPosts';
+import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 const Profile = () => {
   return (
     <div>
-      <div >
-        <img src={background} alt='back' />
-      </div>
-      <div>
-        ava + descr
-      </div>
-      <MyPosts />
+      <ProfileInfo />
     </div>
-  );
+  )
 }
 
 export default Profile;
