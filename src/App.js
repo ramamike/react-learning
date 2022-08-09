@@ -6,7 +6,8 @@ import MainHeader from './components/MainHeader/MainHeader';
 import MainNavbar from './components/Navbar/MainNavbar';
 import Profile from './components/Profile/Profile';
 
-const App = () => {
+const App = (props) => {
+ 
   return (
     <div className='app-wrapper'>
       <MainHeader />
@@ -14,7 +15,7 @@ const App = () => {
       <div className='app-wrapper-content'>
         <Routes>
           <Route path='/dialogs' element={<Dialogs />} />
-          <Route path='/profile' element={<Profile />} />
+          <Route path='/profile' element={<Profile posts={props.posts} />} />
         </Routes>
       </div>
     </div>
