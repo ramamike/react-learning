@@ -1,5 +1,4 @@
 import React from 'react';
-import MyPosts from '../MyPosts/MyPosts';
 import s from './ProfileInfo.module.css';
 import background from './background.png';
 
@@ -12,7 +11,6 @@ const ProfileInfo = () => {
       <div className={s.descriptionBlock}>
         ava + descr
       </div>
-      <MyPosts/>
     </div>
   );
 }
