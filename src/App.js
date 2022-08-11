@@ -18,7 +18,9 @@ const App = (props) => {
             messagesData={props.state.messagePage.messagesData} />} />
           <Route path='/profile' element={<Profile
             posts={props.state.profilePage.posts} 
-            addPost={props.addPost}/>} />
+            addPost={props.addPost}
+            newPostText={props.state.profilePage.newPostText}
+            updateNewPostText = {props.updateNewPostText}/>} />
         </Routes>
       </div>
     </div>
