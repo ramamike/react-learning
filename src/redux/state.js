@@ -48,7 +48,6 @@ let store = {
                 message: this._state.profilePage.newPostText,
                 likesCount: 0
             };
-
             this._state.profilePage.posts.push(newPost);
             this._state.profilePage.newPostText = '';
             this._callSubscriber(this._state);
@@ -56,6 +55,19 @@ let store = {
             this._state.profilePage.newPostText = action.newText;
             this._callSubscriber(this._state);
         }
+    }
+}
+
+export const addPostActionCreator = () => {
+    return {
+        type: 'ADD-POST'
+    }
+}
+
+export const updateNewPostTextActionCreator = (text) => {
+    return {
+        type: 'UPDATE-NEW-POST-TEXT',
+        newText: text
     }
 }
 
