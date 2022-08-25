@@ -15,7 +15,7 @@ let store = {
             newPostText: '',
         },
 
-        messagePage: {
+        dialogsPage: {
             dialogsData: [
                 { id: 0, name: "user 0" },
                 { id: 1, name: "user 1" },
@@ -52,7 +52,7 @@ let store = {
     dispatch(action) {
 
         this._state.profilePage = profileReducer(this._state.profilePage, action);
-        this._state.messagePage = dialogsReducer(this._state.messagePage, action);
+        this._state.messagePage = dialogsReducer(this._state.dialogsPage, action);
         this._state.sideBar = sideBarReducer(this._state.sideBar, action);
 
         this._callSubscriber(this._state);
