@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import './App.css';
-import Dialogs from './components/Dialogs/Dialogs';
+import DialogsContainer from './components/Dialogs/DialogsContainer';
 import MainHeader from './components/MainHeader/MainHeader';
 import MainNavbar from './components/Navbar/MainNavbar';
 import Profile from './components/Profile/Profile';
@@ -13,7 +13,7 @@ const App = (props) => {
       <MainNavbar />
       <div className='app-wrapper-content'>
         <Routes>
-          <Route path='/dialogs' element={<Dialogs store={props.store} />} />
+          <Route path='/dialogs' element={<DialogsContainer store={props.store} />} />
           <Route path='/profile' element={<Profile store={props.store} />} />
         </Routes>
       </div>
