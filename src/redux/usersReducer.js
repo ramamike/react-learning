@@ -4,9 +4,9 @@ const SET_USERS = 'SET_USERS'
 
 let initialState = {
     users: [
-        // { id: 0, fallowed: true, fullName: "Mihal", status: "admin", location: { city: "Vazan", country: "Belarus" } },
-        // { id: 1, fallowed: true, fullName: "Pavel", status: "friend", location: { city: "Minsk", country: "Belarus" } },
-        // { id: 2, fallowed: false, fullName: "Alex", status: "friend", location: { city: "Minsk", country: "Belarus" } },
+        { id: 0, photoUrl: './avatars.ava1', followed: true, fullName: "Mihal", status: "admin", location: { city: "Vazan", country: "Belarus" } },
+        { id: 1, photoUrl: './avatars.ava1', followed: true, fullName: "Pavel", status: "friend", location: { city: "Minsk", country: "Belarus" } },
+        { id: 2, photoUrl: './avatars.ava1', followed: false, fullName: "Alex", status: "friend", location: { city: "Minsk", country: "Belarus" } },
     ]
 }
 
