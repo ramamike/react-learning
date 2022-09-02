@@ -8,17 +8,18 @@ let mapStateToProps = (state) => {
     }
 }
 
-let mapDispatchToProps =(dispatch) => {
+let mapDispatchToProps = (dispatch) => {
+    debugger
     return {
-        follow: (userId)=> {
-            dispatch(followAC(userId))
+        follow: (userId) => {
+            dispatch(followAC(userId));
         },
-        unfollow: (userId)=> {
-            dispatch(unfollowAC(userId))
+        unfollow: (userId) => {
+            dispatch(unfollowAC(userId));
         },
         setUsers: (users) => {
-            dispatch(setUsersAC(users))
-        } 
+            dispatch(setUsersAC(users));
+        }
     }
 }
 

@@ -3,6 +3,7 @@ import ava from './avatars/ava1.png'
 import styles from './users.module.css'
 
 let Users = (props) => {
+    debugger
     return <div>
         {
             props.users.map(u => <div key={u.id}>
@@ -14,6 +15,7 @@ let Users = (props) => {
                         {
                             u.followed
                                 ? <button onClick={() => { props.unfollow(u.id) }}>Follow</button>
+                                // ? <button onClick={() => { alert('hi' + u.id) }}>Follow</button>
                                 : <button onClick={() => { props.follow(u.id) }}>Unfollow</button>
                         }
                     </div>
